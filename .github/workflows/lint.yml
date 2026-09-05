@@ -1,0 +1,40 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Lint frontmatter
+        run: python3 scripts/lint-frontmatter.py
+
+      - name: Check runtime manifests
+        run: python3 scripts/check-runtimes.py
+
+      - name: Check marketplace sources resolve
+        run: python3 scripts/check-marketplace.py
+
+      - name: Regenerate READMEs
+        run: python3 scripts/generate-readmes.py
+
+      - name: Regenerate index
+        run: python3 scripts/generate-index.py
+
+      - name: Rebuild Gemini context files
+        run: bash scripts/build-gemini.sh
+
+      - name: Fail if generated files are out of date
+        run: git diff --exit-code

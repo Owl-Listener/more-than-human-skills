@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "more-than-human-skills",
+  "version": "0.1.0",
+  "description": "Agentic skills and commands for checking whether what we build serves all living things — not just humans. Four lenses: who is affected, what it costs ecologically, when the user is not human, and what we are trading away without writing it down.",
+  "owner": {
+    "name": "MC Dean",
+    "url": "https://marieclairedean.substack.com/"
+  },
+  "plugins": [
+    {
+      "name": "more-than-human",
+      "description": "Non-human stakeholder mapping, AI energy/water/hardware footprint estimation, animal-computer interaction, and a harm tradeoff ledger with named acceptors — plus /audit-more-than-human.",
+      "source": "./more-than-human",
+      "category": "ethics"
+    }
+  ]
+}

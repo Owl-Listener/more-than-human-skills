@@ -1,0 +1,9 @@
+{
+  "name": "more-than-human",
+  "version": "0.1.0",
+  "description": "Check whether what you build serves all living things, not just humans: non-human stakeholder mapping, AI's energy, water and hardware footprint, designing for animals as users, and a tradeoff ledger that puts a name on every accepted harm.",
+  "author": { "name": "MC Dean", "url": "https://marieclairedean.substack.com/" },
+  "keywords": ["more-than-human", "multispecies", "sustainability", "ai-footprint", "animal-computer-interaction", "ecology", "conservation", "ethics", "biodiversity"],
+  "homepage": "https://github.com/Owl-Listener/more-than-human-skills",
+  "license": "MIT"
+}
