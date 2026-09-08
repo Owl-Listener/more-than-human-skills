@@ -1,0 +1,6 @@
+{
+  "name": "more-than-human",
+  "version": "0.1.0",
+  "description": "Skills for checking whether what you build serves all living things: non-human stakeholder mapping, AI ecological footprint, animals as users, and a harm tradeoff ledger with named acceptors.",
+  "contextFileName": "GEMINI.md"
+}
